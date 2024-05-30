@@ -5,7 +5,7 @@
         <plugin name='differential_drive_controller' filename='libgazebo_ros_diffdrive.so'>
        
             <!-- Plugin update rate in Hz -->
-            <updateRate>10</updateRate>
+            <updateRate>1</updateRate>
 
             <!-- Wheel Information -->
             <leftJoint>left_wheel_joint</leftJoint>
