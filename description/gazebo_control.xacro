@@ -5,7 +5,7 @@
         <plugin name='differential_drive_controller' filename='libdiffdrive_plugin.so'>
        
             <!-- Plugin update rate in Hz -->
-            <updateRate>1</updateRate>
+            <updateRate>50</updateRate>
 
             <!-- Wheel Information -->
             <leftJoint>left_wheel_joint</leftJoint>
