@@ -2,10 +2,10 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robot">
 
     <gazebo>
-        <plugin name='differential_drive_controller' filename='libdiffdrive_plugin.so'>
+        <plugin name='differential_drive_controller' filename='libgazebo_ros_diffdrive.so'>
        
             <!-- Plugin update rate in Hz -->
-            <updateRate>1</updateRate>
+            <updateRate>10</updateRate>
 
             <!-- Wheel Information -->
             <leftJoint>left_wheel_joint</leftJoint>
@@ -20,16 +20,15 @@
     
 
             <!-- Output -->
-            <!-- <odometry_frame>odom</odometry_frame> -->
+            
             <odometryFrame>odom</odometryFrame>
 
-            <!-- <robot_base_frame>base_link</robot_base_frame> -->
             <robotBaseFrame>base_link</robotBaseFrame>
+
+            <publishOdom>true</publishOdom>
             
-            <!-- <publish_odom_tf>true</publish_odom_tf> -->
             <publishOdomTF>true</publishOdomTF>
            
-            <!-- <publish_wheel_tf>true</publish_wheel_tf> -->
             <publishWheelTF>true</publishWheelTF>
     
     
