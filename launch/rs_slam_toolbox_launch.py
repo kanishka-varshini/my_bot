@@ -5,7 +5,7 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='realsense2_camera',
-            executable='rs_camera.launch.py',
+            executable='rs_launch.py',
             output='screen',
             parameters=[{'enable_depth': True}],
         ),
